@@ -11,7 +11,7 @@
 <script src="Template/bootstrap/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="Template/css/login.css" />
 
-<!-- Trở về đầu trang ----------------------------------------------------------->
+<!-- Trở về đầu trang -->
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <!-- Import thư viện JQuery -->
@@ -41,11 +41,13 @@
 	<i class="fa fa-space-shuttle fa-rotate-270"></i>
 </div>
 </head>
-<!--Header---------------------------------------------------------------------->
+<!--Header-->
 <body>
 	<div class="container-fluid">
 		<nav class="navbar navbar-default">
+		
 			<%@ include file="innavbar.jsp"%>
+			
 			<!--Carousel--------------------------------------------------------------------------- -->
 
 			<div id="carousel-id" class="carousel slide" data-ride="carousel">
@@ -73,11 +75,9 @@
 					data-slide="next"><span
 					class="glyphicon glyphicon-chevron-right"></span></a>
 			</div>
-
-
-			<!-------------------------------------------------------------------- -->
+						
 			<div class="content">Đây là nội dung</div>
-			<!---footer-------------------------------------------------- -->
+			
 			<%@ include file="footer.jsp"%>
 		</nav>
 	</div>
