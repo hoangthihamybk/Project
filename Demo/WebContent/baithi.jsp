@@ -36,7 +36,6 @@
           </button>
           <a class="navbar-brand" href="index.jsp">Hello Admin</a>
         </div>
-
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
           <ul class="nav navbar-nav side-nav">

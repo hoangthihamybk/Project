@@ -284,6 +284,7 @@
                     <p class="announcement-text">CÀI ĐẶT</p>
                   </div>
                 </div>
+                
               </div>
               <a href="caidat.jsp">
                 <div class="panel-footer announcement-bottom">
