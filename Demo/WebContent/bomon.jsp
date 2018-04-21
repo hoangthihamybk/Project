@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -32,19 +34,19 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">Hello Admin</a>
+          <a class="navbar-brand" href="index.jsp">Hello Admin</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
           <ul class="nav navbar-nav side-nav">
-            <li class="active"><a href="index.html"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-            <li><a href="bomon.html"><i class="fa fa-bar-chart-o"></i> Bộ môn</a></li>
-            <li><a href="hocsinh.html"><i class="fa fa-table"></i> Học sinh</a></li>
-            <li><a href="baithi.html"><i class="fa fa-edit"></i> Bài thi</a></li>
-            <li><a href="cauhoi.html"><i class="fa fa-font"></i> Câu hỏi</a></li>
-            <li><a href="caidat.html"><i class="fa fa-desktop"></i> Cài đặt</a></li>
-            <li><a href="xemketqua.html"><i class="fa fa-wrench"></i> Xem kết quả</a></li>
+            <li class="active"><a href="index.jsp"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+            <li><a href="hocsinh.jsp"><i class="fa fa-bar-chart-o"></i> Học sinh</a></li>
+            <li><a href="bomon.jsp"><i class="fa fa-table"></i> Bộ môn</a></li>
+            <li><a href="baithi.jsp"><i class="fa fa-edit"></i> Bài thi</a></li>
+            <li><a href="cauhoi.jsp"><i class="fa fa-font"></i> Câu hỏi</a></li>
+            <li><a href="xemketqua.jsp"><i class="fa fa-desktop"></i> Xem kết quả</a></li>
+            <li><a href="caidat.jsp"><i class="fa fa-wrench"></i> Cài đặt</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-caret-square-o-down"></i> Dropdown <b class="caret"></b></a>
               <ul class="dropdown-menu">
@@ -135,3 +137,4 @@
 
   </body>
 </html>
+    

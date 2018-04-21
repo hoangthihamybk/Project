@@ -1,3 +1,6 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -32,26 +35,26 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">Hello Admin,</a>
+          <a class="navbar-brand" href="index.jsp">Hello Admin,</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
           <ul class="nav navbar-nav side-nav">
-            <li class="active"><a href="index.html"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-            <li><a href="bomon.html"><i class="fa fa-bar-chart-o"></i> Bộ môn</a></li>
-            <li><a href="hocsinh.html"><i class="fa fa-table"></i> Học sinh</a></li>
-            <li><a href="baithi.html"><i class="fa fa-edit"></i> Bài thi</a></li>
-            <li><a href="cauhoi.html"><i class="fa fa-font"></i> Câu hỏi</a></li>
-            <li><a href="caidat.html"><i class="fa fa-desktop"></i> Cài đặt</a></li>
-            <li><a href="xemketqua.html"><i class="fa fa-wrench"></i> Xem kết quả</a></li>
+            <li class="active"><a href="index.jsp"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+            <li><a href="hocsinh.jsp"><i class="fa fa-bar-chart-o"></i> Học sinh</a></li>
+            <li><a href="bomon.jsp"><i class="fa fa-table"></i> Bộ môn</a></li>
+            <li><a href="baithi.jsp"><i class="fa fa-edit"></i> Bài thi</a></li>
+            <li><a href="cauhoi.jsp"><i class="fa fa-font"></i> Câu hỏi</a></li>
+            <li><a href="xemketqua.jsp"><i class="fa fa-desktop"></i> Xem kết quả</a></li>
+            <li><a href="caidat.jsp"><i class="fa fa-wrench"></i> Cài đặt</a></li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-caret-square-o-down"></i> Dropdown <b class="caret"></b></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-caret-square-o-down"></i> Hướng dẫn <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Dropdown Item</a></li>
-                <li><a href="#">Another Item</a></li>
-                <li><a href="#">Third Item</a></li>
-                <li><a href="#">Last Item</a></li>
+                <li><a href="#">Lưu ý về bộ môn</a></li>
+                <li><a href="#">Quy định về bài thi</a></li>
+                <li><a href="#">Trách nhiệm admin</a></li>
+                <li><a href="#">Quy định chung</a></li>
               </ul>
             </li>
           </ul>
@@ -135,46 +138,19 @@
               <div class="panel-heading">
                 <div class="row">
                   <div class="col-xs-6">
-                    <i class="fa fa-comments fa-5x"></i>
+                    <i class="fa fa-users fa-5x"></i>
                   </div>
                   <div class="col-xs-6 text-right">
-                    <p class="announcement-heading">456</p>
-                    <p class="announcement-text">New Mentions!</p>
+                    <p class="announcement-heading">200</p>
+                    <p class="announcement-text">DANH SÁCH HỌC SINH</p>
                   </div>
                 </div>
               </div>
-              <a href="#">
+              <a href="hocsinh.jsp">
                 <div class="panel-footer announcement-bottom">
                   <div class="row">
                     <div class="col-xs-6">
-                      View Mentions
-                    </div>
-                    <div class="col-xs-6 text-right">
-                      <i class="fa fa-arrow-circle-right"></i>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="panel panel-warning">
-              <div class="panel-heading">
-                <div class="row">
-                  <div class="col-xs-6">
-                    <i class="fa fa-check fa-5x"></i>
-                  </div>
-                  <div class="col-xs-6 text-right">
-                    <p class="announcement-heading">12</p>
-                    <p class="announcement-text">To-Do Items</p>
-                  </div>
-                </div>
-              </div>
-              <a href="#">
-                <div class="panel-footer announcement-bottom">
-                  <div class="row">
-                    <div class="col-xs-6">
-                      Complete Tasks
+                      Xem
                     </div>
                     <div class="col-xs-6 text-right">
                       <i class="fa fa-arrow-circle-right"></i>
@@ -189,19 +165,19 @@
               <div class="panel-heading">
                 <div class="row">
                   <div class="col-xs-6">
-                    <i class="fa fa-tasks fa-5x"></i>
+                    <i class="fa fa-book fa-5x"></i>
                   </div>
                   <div class="col-xs-6 text-right">
-                    <p class="announcement-heading">18</p>
-                    <p class="announcement-text">Crawl Errors</p>
+                    <p class="announcement-heading">5</p>
+                    <p class="announcement-text">DANH SÁCH BỘ MÔN</p>
                   </div>
                 </div>
               </div>
-              <a href="#">
+              <a href="bomon.jsp">
                 <div class="panel-footer announcement-bottom">
                   <div class="row">
                     <div class="col-xs-6">
-                      Fix Issues
+                      Xem
                     </div>
                     <div class="col-xs-6 text-right">
                       <i class="fa fa-arrow-circle-right"></i>
@@ -212,23 +188,51 @@
             </div>
           </div>
           <div class="col-lg-3">
+            <div class="panel panel-warning">
+              <div class="panel-heading">
+                <div class="row">
+                  <div class="col-xs-6">
+                    <i class="fa fa-file-text-o fa-5x"></i>
+                  </div>
+                  <div class="col-xs-6 text-right">
+                    <p class="announcement-heading">12</p>
+                    <p class="announcement-text">DANH SÁCH BÀI THI</p>
+                  </div>
+                </div>
+              </div>
+              <a href="baithi.jsp">
+                <div class="panel-footer announcement-bottom">
+                  <div class="row">
+                    <div class="col-xs-6">
+                      Xem
+                    </div>
+                    <div class="col-xs-6 text-right">
+                      <i class="fa fa-arrow-circle-right"></i>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          
+          <div class="col-lg-3">
             <div class="panel panel-success">
               <div class="panel-heading">
                 <div class="row">
                   <div class="col-xs-6">
-                    <i class="fa fa-comments fa-5x"></i>
+                    <i class="fa fa-question-circle fa-5x"></i>
                   </div>
                   <div class="col-xs-6 text-right">
                     <p class="announcement-heading">56</p>
-                    <p class="announcement-text">New Orders!</p>
+                    <p class="announcement-text">DANH SÁCH CÂU HỎI</p>
                   </div>
                 </div>
               </div>
-              <a href="#">
+              <a href="cauhoi.jsp">
                 <div class="panel-footer announcement-bottom">
                   <div class="row">
                     <div class="col-xs-6">
-                      Complete Orders
+                      Xem
                     </div>
                     <div class="col-xs-6 text-right">
                       <i class="fa fa-arrow-circle-right"></i>
@@ -245,19 +249,19 @@
               <div class="panel-heading">
                 <div class="row">
                   <div class="col-xs-6">
-                    <i class="fa fa-comments fa-5x"></i>
+                    <i class="fa fa-check-square-o fa-5x"></i>
                   </div>
                   <div class="col-xs-6 text-right">
-                    <p class="announcement-heading">456</p>
-                    <p class="announcement-text">New Mentions!</p>
+                    <p class="announcement-heading">200</p>
+                    <p class="announcement-text">KẾT QUẢ BÀI THI</p>
                   </div>
                 </div>
               </div>
-              <a href="#">
+              <a href="xemketqua.jsp">
                 <div class="panel-footer announcement-bottom">
                   <div class="row">
                     <div class="col-xs-6">
-                      View Mentions
+                      Xem
                     </div>
                     <div class="col-xs-6 text-right">
                       <i class="fa fa-arrow-circle-right"></i>
@@ -273,19 +277,19 @@
               <div class="panel-heading">
                 <div class="row">
                   <div class="col-xs-6">
-                    <i class="fa fa-comments fa-5x"></i>
+                    <i class="fa fa-cog fa-5x"></i>
                   </div>
                   <div class="col-xs-6 text-right">
                     <p class="announcement-heading">456</p>
-                    <p class="announcement-text">New Mentions!</p>
+                    <p class="announcement-text">CÀI ĐẶT</p>
                   </div>
                 </div>
               </div>
-              <a href="#">
+              <a href="caidat.jsp">
                 <div class="panel-footer announcement-bottom">
                   <div class="row">
                     <div class="col-xs-6">
-                      View Mentions
+                      Xem
                     </div>
                     <div class="col-xs-6 text-right">
                       <i class="fa fa-arrow-circle-right"></i>
@@ -313,3 +317,4 @@
 
   </body>
 </html>
+    
