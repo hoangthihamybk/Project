@@ -26,8 +26,8 @@
             <li><a href="hocsinh.jsp"><i class="fa fa-users"></i> Học sinh</a></li>
             <li><a href="bomon.jsp"><i class="fa fa-book"></i> Bộ môn</a></li>
             <li><a href="baithi.jsp"><i class="fa fa-file-text-o"></i> Bài thi</a></li>
-            <li><a href="cauhoi.jsp"><i class="fa fa-question-circle"></i> Câu hỏi</a></li>
-            <li><a href="xemketqua.jsp"><i class="fa fa-check-square-o"></i> Xem kết quả</a></li>
+            <li><a href="xemketqua.jsp"><i class="fa fa-question-circle"></i> Xem kết quả </a></li>
+            <li><a href="cauhoi.jsp"><i class="fa fa-check-square-o"></i> Câu hỏi</a></li>
             <li><a href="caidat.jsp"><i class="fa fa-cog"></i> Cài đặt</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-caret-square-o-down"></i> Hướng dẫn <b class="caret"></b></a>

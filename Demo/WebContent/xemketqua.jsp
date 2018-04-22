@@ -10,7 +10,7 @@
     <meta name="author" content="">
 
     <title>Demo</title>
-
+    <link href="css/bang.css" rel="stylesheet">
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
 
@@ -30,7 +30,58 @@
       <jsp:include page="menu.jsp"></jsp:include>
       <!--  hết menu -->
 
-       Đây là trang bài thi
+       <div class ="noidung">
+      <h2>Xem kết quả</h2></br>
+       <table class="zui-table zui-table-horizontal zui-table-highlight">
+    <thead>
+        <tr>
+            <th>Tên học sinh</th>
+            <th>Tên bài thi</th>
+            <th>Ngày thi</th>
+            <th>Điểm cao nhất</th>
+            <th>Số bài thi</a></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Nguyễn Thị A</td>
+            <td>Toán - THPT Chuyên Bắc Ninh</td>
+            <td>23/4/2018</td>
+            <td>8,6</td>
+            <td>3</td>                        
+        </tr>
+        <tr>
+            <td>Nguyễn Thị A</td>
+            <td>Toán - THPT Chuyên Bắc Ninh</td>
+            <td>23/4/2018</td>
+            <td>8,6</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>Nguyễn Thị A</td>
+            <td>Toán - THPT Chuyên Bắc Ninh</td>
+            <td>23/4/2018</td>
+            <td>8,6</td>
+            <td>3</td>   
+        </tr>
+        <tr>
+            <td>Nguyễn Thị A</td>
+            <td>Toán - THPT Chuyên Bắc Ninh</td>
+            <td>23/4/2018</td>
+            <td>8,6</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>Nguyễn Thị A</td>
+            <td>Toán - THPT Chuyên Bắc Ninh</td>
+            <td>23/4/2018</td>
+            <td>8,6</td>
+            <td>3</td>  
+        </tr>
+    </tbody>
+</table>
+
+    </div><!-- /#wrapper -->
 
     </div><!-- /#wrapper -->
 

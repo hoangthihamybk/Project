@@ -8,9 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
+    
 
     <title>Demo</title>
-
+    <link href="css/bang.css" rel="stylesheet">
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
 
@@ -29,8 +30,56 @@
       <!-- menu -->
       <jsp:include page="menu.jsp"></jsp:include>
       <!--  hết menu -->
-
-       Đây là trang bài thi
+      <div class ="noidung">
+      <h2>Danh sách học sinh</h2></br>
+       <table class="zui-table zui-table-horizontal zui-table-highlight">
+    <thead>
+        <tr>
+            <th>Số thứ tự</th>
+            <th>Họ tên</th>
+            <th>Email</th>
+            <th>Mật khẩu</th>
+            <th>Xóa</a></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Nguyễn Thị A</td>
+            <td>a@gmail.com</td>
+            <td>12345678</td>
+            <td><a href="#"><i class="fa fa-trash-o fa-2x fa-border"></td>            
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Nguyễn Thị A</td>
+            <td>a@gmail.com</td>
+            <td>12345678</td>
+            <td><a href="#"><i class="fa fa-trash-o fa-2x fa-border"></td>   
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Nguyễn Thị A</td>
+            <td>a@gmail.com</td>
+            <td>12345678</td>
+            <td><a href="#"><i class="fa fa-trash-o fa-2x fa-border"></td>   
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Nguyễn Thị A</td>
+            <td>a@gmail.com</td>
+            <td>12345678</td>
+            <td><a href="#"><i class="fa fa-trash-o fa-2x fa-border"></td>   
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Nguyễn Thị A</td>
+            <td>a@gmail.com</td>
+            <td>12345678</td>
+            <td><a href="#"><i class="fa fa-trash-o fa-2x fa-border"></td>   
+        </tr>
+    </tbody>
+</table>
 
     </div><!-- /#wrapper -->
 

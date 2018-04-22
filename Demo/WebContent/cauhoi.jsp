@@ -30,7 +30,7 @@
       <jsp:include page="menu.jsp"></jsp:include>
       <!--  hết menu -->
 
-     Đây là trang bài thi  
+     Đây là trang câu hỏi 
 
     </div><!-- /#wrapper -->
 

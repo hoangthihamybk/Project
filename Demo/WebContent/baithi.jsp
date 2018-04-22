@@ -9,10 +9,10 @@
     <meta name="author" content="">
 
     <title>Demo</title>
-
+    <link href="css/bang.css" rel="stylesheet">
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
-
+    
     <!-- Add custom CSS here -->
     <link href="css/sb-admin.css" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
@@ -29,7 +29,77 @@
       <jsp:include page="menu.jsp"></jsp:include>
       <!--  hết menu -->
       
-      Đây là trang bài thi
+     <div class ="noidung">
+      <h2>Danh sách bài thi</h2>
+      </br>
+      <a class="btn btn-default" href="#" role="button"><i class="fa fa-plus 4x"></i> Thêm bài thi</a>
+      </br>
+       <table class="zui-table zui-table-horizontal zui-table-highlight">
+    <thead>
+        <tr>
+            <th>Tên bài thi</th>
+            <th>Ngày tạo</th>
+            <th>Bộ Môn</th>            
+            <th>Tùy chọn</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            
+            <td>Toán-THPT chuyên Bắc Ninh</td>
+            <td>21/4/2018</td>
+            <td>Toán</td>
+            <td>
+            <a href="#"><i class="fa fa-eye fa-2x fa-border" style="color: #2980b9"></i></a>
+            <a href="#"><i class="fa fa-edit fa-2x fa-border" style="color: #2980b9"></i></a>
+            <a href="#"><i class="fa fa-trash-o fa-2x fa-border"></i></a>
+            </td>            
+        </tr>
+        <tr>
+            
+            <td>Toán-THPT chuyên Bắc Ninh</td>
+            <td>21/4/2018</td>
+            <td>Toán</td>
+            <td>            
+            <a href="#"><i class="fa fa-eye fa-2x fa-border" style="color: #2980b9"></i></a>
+            <a href="#"><i class="fa fa-edit fa-2x fa-border" style="color: #2980b9"></i></a>
+            <a href="#"><i class="fa fa-trash-o fa-2x fa-border"></i></a>
+            </td>     
+        </tr>
+        <tr>
+            <td>Toán-THPT chuyên Bắc Ninh</td>
+            <td>21/4/2018</td>
+            <td>Toán</td>
+            <td>
+            <a href="#"><i class="fa fa-eye fa-2x fa-border" style="color: #2980b9"></i></a>
+            <a href="#"><i class="fa fa-edit fa-2x fa-border" style="color: #2980b9"></i></a>
+            <a href="#"><i class="fa fa-trash-o fa-2x fa-border"></i></a>
+            </td>  
+        </tr>
+        <tr>
+            <td>Toán-THPT chuyên Bắc Ninh</td>
+            <td>21/4/2018</td>
+            <td>Toán</td>           
+            <td>
+           <a href="#"><i class="fa fa-eye fa-2x fa-border" style="color: #2980b9"></i></a>
+            <a href="#"><i class="fa fa-edit fa-2x fa-border" style="color: #2980b9"></i></a>
+            <a href="#"><i class="fa fa-trash-o fa-2x fa-border"></i></a>
+            </td>            
+        </tr>
+        <tr>
+            <td>Toán-THPT chuyên Bắc Ninh</td>
+            <td>21/4/2018</td>
+            <td>Toán</td>           
+            <td>
+            <a href="#"><i class="fa fa-eye fa-2x fa-border" style="color: #2980b9"></i></a>
+            <a href="#"><i class="fa fa-edit fa-2x fa-border" style="color: #2980b9"></i></a>
+            <a href="#"><i class="fa fa-trash-o fa-2x fa-border"></i></a>
+            </td>              
+        </tr>
+    </tbody>
+</table>
+
+    </div><!-- /#wrapper -->
 
     </div><!-- /#wrapper -->
 
