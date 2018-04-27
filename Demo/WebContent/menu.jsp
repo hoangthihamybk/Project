@@ -16,13 +16,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.jsp">Hello Admin,</a>
+          <a class="navbar-brand" href="indexAdmin.jsp">Hello Admin,</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-ex1-collapse">
           <ul class="nav navbar-nav side-nav">
-            <li class="active"><a href="index.jsp"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+            <li class="active"><a href="indexAdmin.jsp"><i class="fa fa-dashboard"></i> Dashboard</a></li>
             <li><a href="hocsinh.jsp"><i class="fa fa-users"></i> Học sinh</a></li>
             <li><a href="bomon.jsp"><i class="fa fa-book"></i> Bộ môn</a></li>
             <li><a href="baithi.jsp"><i class="fa fa-file-text-o"></i> Bài thi</a></li>
