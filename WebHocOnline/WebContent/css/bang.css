@@ -1,0 +1,69 @@
+.noidung{
+	background-color: ;	
+}
+.tieude{
+	height:3px;
+	background-color: white;
+}
+.noidungcon{
+	height:750px;
+	background-color: #F2F2F2;
+	padding-top: 72px;
+}
+.noidungcon h5{
+	padding-left: 35px;
+}
+.suabomon{
+	width:700px;
+	padding-left:70px;
+}
+.row{
+	margin-bottom: 10px;
+	margin-top: -40px;
+	padding-left: 32px;
+}
+.noidung h3{
+	padding-left: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.zui-table {
+    border: solid 1px #DDEEEE;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font: normal 13px Arial, sans-serif;
+    width:94%;
+    height:100px;
+    display: auto;
+    margin-left: 32px;
+    background-color: white;
+}
+.zui-table thead th {
+    background-color: #DDEFEF;
+    border: solid 1px #DDEEEE;
+    color: #336B6B;
+    padding: 10px;
+    text-align: left;
+    text-shadow: 1px 1px 1px #fff;
+}
+.zui-table tbody td {
+    border: solid 1px #DDEEEE;
+    color: #333;
+    padding: 10px;
+    text-shadow: 1px 1px 1px #fff;
+}
+.zui-table-highlight tbody tr:hover {
+    background-color: #CCE7E7;
+}
+.zui-table-horizontal tbody td {
+    border-left: none;
+    border-right: none;
+}
+.zui-table tr td a{
+	color:red;
+}
+.zui-table tr td a{
+	color:red;
+}
+
+

@@ -241,6 +241,7 @@
 				
 			</div>
 		</div>
+		</div>
 		<!-- datatable bootstrap -->
 	    <!-- FastClick -->
 	    <script src="../vendors/fastclick/lib/fastclick.js"></script>

@@ -19,7 +19,7 @@ public class UserDAO implements ObjectDAO {
 	public static Map<String, UserAccount> mapUndo = new HashMap<>();
 
 	public static UserAccount checkLogin(String email, String pass) {
-		for (UserAccount u : mapUser.values()) {
+		for (UserAccount u : mapUser.values()) { ////////////////////
 			if (u.getEmail().equals(email) && u.getPassword().equals(pass)) {
 				return u;
 			}
@@ -38,7 +38,7 @@ public class UserDAO implements ObjectDAO {
 		try {
 			Connection con = ConnectDB.getConnect();
 			PreparedStatement statement = con.prepareStatement(
-					"insert into UserAccount (ID,email,password,googleID,facebookID,roleID) values(?,?,?,?,?,?)");
+					"insert into UserAccount (UserID,email,password,googleID,facebookID,roleID) values(?,?,?,?,?,?)");
 			statement.setString(1, ua.getUserID());
 			statement.setString(2, ua.getEmail());
 			statement.setString(3, ua.getPassword());
@@ -59,7 +59,7 @@ public class UserDAO implements ObjectDAO {
 		UserDetail ud = UserDetailDAO.mapUserDetail.get(userID);
 		if (!mapUser.containsKey(userID))
 			return false;
-		// sua luon o khoa ngoai
+		// sua luon o khoa ngoai ..........yes
 		if (ud == null)
 			return false;
 
@@ -68,14 +68,14 @@ public class UserDAO implements ObjectDAO {
 
 		try {
 			Connection connection = ConnectDB.getConnect();
-			String sqla = "update UserAccount set ID='" + ua.getUserID() + "',email='" + ua.getEmail() + "',password='"
+			String sqla = "update UserAccount set UserID='" + ua.getUserID() + "',email='" + ua.getEmail() + "',password='"
 					+ ua.getPassword() + "',googleID='" + ua.getGoogleID() + "',facebookID='" + ua.getFacebookID()
-					+ "',RoleID='" + ua.getRoleID() + "' where ID='" + userID + "'";
+					+ "',RoleID='" + ua.getRoleID() + "' where UserID='" + userID + "'";
 
-			String sqlb = "update UserDetail set ID='" + ud.getUserID() + "',FullName=N'" + ud.getFullName()
+			String sqlb = "update UserDetail set UserID='" + ud.getUserID() + "',FullName=N'" + ud.getFullName()
 					+ "',Gender='" + ud.getGender() + "',Birthday='" + ud.getBirthDay() + "',PhoneNumber='"
 					+ ud.getPhoneNumber() + "',Address=N'" + ud.getAddress() + "',Avatar='" + ud.getLinkImage()
-					+ "' where ID='" + userID + "'";
+					+ "' where UserID='" + userID + "'";
 			PreparedStatement preparedStatementa = connection.prepareStatement(sqla);
 			preparedStatementa.executeUpdate();
 			PreparedStatement preparedStatementb = connection.prepareStatement(sqlb);
@@ -102,12 +102,12 @@ public class UserDAO implements ObjectDAO {
 		}
 		try {
 			Connection con = ConnectDB.getConnect();
-			String sql = "delete from UserAccount where ID=?";
+			String sql = "delete from UserAccount where UserID=?";
 			PreparedStatement st = con.prepareStatement(sql);
 			st.setString(1, userID);
 			st.executeUpdate();
 			
-			String sql2 = "delete from UserDetail where ID=?";
+			String sql2 = "delete from UserDetail where UserID=?";
 			PreparedStatement st2 = con.prepareStatement(sql2);
 			st2.setString(1, userID);
 			st2.executeUpdate();
@@ -151,7 +151,7 @@ public class UserDAO implements ObjectDAO {
 		return mapTemp;
 	}
 
-	public static String randomUserID(String email) {
+	public static String randomUserID(String email) { 
 		String resuilt = email.substring(0, email.indexOf("@"));
 		Random r = new Random();
 		resuilt += r.nextInt(100000);

@@ -1,0 +1,261 @@
+.reserve-wrapper, .reserve-wrapper-2, .reserve-wrapper-3 {
+            height: 0px;
+            width: 100%;
+            background-color: #009bff;
+            text-align: center;
+            padding: 0;
+            position: relative;
+            z-index: 20;
+            margin: 0 0 10px;
+            opacity: 0;
+            visibility: hidden;
+            display: none;
+        }
+
+        .reserve-wrapper::before {
+            content: "";
+            display: block;
+            height: 40px;
+            left: 5px;
+            position: absolute;
+            top: 0;
+            width: 338px;
+        }
+
+        .reserve-wrapper-2:before {
+            line-height: 40px;
+            content: "HOC THỬ MIỄN PHÍ PEN-I >>";
+            display: block;
+            height: 40px;
+            left: 5px;
+            position: absolute;
+            top: 0;
+            width: 338px;
+            color: white;
+            font-weight: bold;
+            font-size: 22px;
+        }
+
+        .reserve-wrapper:before {
+            line-height: 40px;
+            content: "ĐẶT CHỖ NỀN TẢNG 2018 >>";
+            display: block;
+            height: 40px;
+            left: 5px;
+            position: absolute;
+            top: 0;
+            width: 338px;
+            color: white;
+            font-weight: bold;
+            font-size: 22px;
+        }
+
+        .reserve-pen {
+            max-width: 670px;
+            margin: 0 auto;
+            color: #ffffff;
+        }
+
+        .reserve-wrapper-2 .reserve-pen, .reserve-wrapper-3 .reserve-pen {
+            max-width: 700px;
+        }
+
+        .reserve-wrapper-2 .reserve-pen ul li, .reserve-wrapper-3 .reserve-pen ul li {
+            width: 220px;
+            float: left;
+        }
+
+        .reserve-pen ul {
+            list-style: none;
+            padding: 0;
+            padding-left: 30px;
+        }
+
+        .reserve-pen ul li {
+            width: 160px;
+            float: left;
+        }
+
+        .reserve-pen ul li .step {
+            display: block;
+            height: 40px;
+            padding: 8px 0;
+            line-height: 24px;
+            position: relative;
+        }
+
+        .reserve-pen ul li .step .step-number {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border: 2px solid white;
+            border-radius: 29px;
+            left: -20px;
+            top: 0;
+            z-index: 4;
+            line-height: 36px;
+            font-size: 14px;
+            background-color: #009bff;
+
+        }
+
+        .reserve-pen ul li .step-content {
+            position: relative;
+            display: block;
+            overflow-y: hidden;
+            padding-left: 12px;
+            font-size: 16px;
+        }
+
+        .reserve-pen ul li .step-content:before {
+            position: absolute;
+            height: 0;
+            width: 0;
+            content: '';
+            top: 50%;
+            left: 12px;
+            margin-top: -28px;
+            border-left: 16px solid white;
+            border-bottom: 28px solid transparent;
+            border-top: 28px solid transparent;
+            z-index: 1;
+        }
+
+        .reserve-pen ul li .step-content:after {
+            position: absolute;
+            height: 0;
+            width: 0;
+            content: '';
+            top: 50%;
+            left: 10px;
+            margin-top: -28px;
+            border-left: 16px solid #009bff;
+            border-bottom: 28px solid transparent;
+            border-top: 28px solid transparent;
+            z-index: 2;
+        }
+
+        .reserve-pen ul li.active {
+            background-color: #fd9e00;
+            color: white;
+        }
+
+        .reserve-pen ul li.active .step:before {
+            content: '!';
+            height: 16px;
+            width: 16px;
+            line-height: 16px;
+            font-size: 12px;
+            font-weight: 500;
+            border-radius: 5px;
+            position: absolute;
+            top: 3px;
+            left: -25px;
+            z-index: 10;
+            background-color: #fd9e00;
+        }
+
+        .reserve-pen ul li.active .step .step-number {
+            background-color: #009bff;
+            border-color: #ffffff;
+        }
+
+        .reserve-pen ul li.active .step-content:before {
+            border-left-color: #ffffff;
+        }
+
+        .reserve-pen ul li.active .step-content:after {
+            border-left-color: #fd9e00;
+        }
+
+        .stickyTop {
+            position: fixed;
+            z-index: 999;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        .show-bar {
+            height: 40px;
+            opacity: 1;
+            display: block;
+            visibility: visible;
+            -webkit-transition: height 0s, opacity 1s,  visibility 1s;
+            transition: height 0s, opacity 1s,  visibility 1s;
+        }
+
+        @media only screen and  (max-width: 1200px){
+            .reserve-wrapper:before {
+                display: none;
+            }
+        }
+
+        @media only screen and  (max-width: 768px){
+            .reserve-wrapper:before, .reserve-wrapper-2:before .reserve-wrapper-3:before{
+                display: none;
+            }
+
+            .reserve-pen {
+                max-width: 390px;
+            }
+
+            .reserve-pen ul {
+                padding-left: 40px;
+                text-align: center;
+            }
+
+            .reserve-pen ul li {
+                float: none;
+                width: 60px;
+                display: inline-block;
+            }
+
+            .reserve-pen ul li.active {
+                width: 150px;
+            }
+
+            .reserve-pen ul li.active .step-content {
+                font-size: 14px;
+                color: #ffffff;
+            }
+
+            .reserve-pen ul li .step-content {
+                font-size: 1px;
+                color: #009bff;
+            }
+
+            .reserve-pen ul li.active .step:before {
+                top: -3px;
+                left: -20px;
+            }
+        }
+
+        @media only screen and  (max-width: 480px){
+            .reserve-pen ul {
+                padding-left: 40px;
+            }
+
+            .reserve-pen ul li {
+                width: 46px;
+            }
+
+            .reserve-pen ul li.active {
+                width: 130px;
+            }
+
+            .reserve-pen ul li.active .step-content {
+                font-size: 14px;
+                color: #ffffff;
+            }
+
+            .reserve-pen ul li .step-content {
+                font-size: 1px;
+                color: #009bff;
+            }
+
+            .reserve-pen ul li.active .step:before {
+                top: -3px;
+                left: -20px;
+            }
+        }

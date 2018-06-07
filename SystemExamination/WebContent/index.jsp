@@ -128,7 +128,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 		</div>
 	</div>
-	</div>
 	<!-- //banner -->
 	<!-- banner-bottom -->
 	<div id="about" class="banner-bottom">
@@ -143,7 +142,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<h4>Hệ thống tuyệt vời đồng hành cùng sĩ tử</h4>
 					<p>
 						Đến với hệ thống bạn sẽ trang bị cho mình lượng kiến thức tốt nhất
-						cho kì thi sắp tới. </br>HỌC ONLINE - bầu trời kiến thức.
+						cho kì thi sắp tới. HỌC ONLINE - bầu trời kiến thức.
 					</p>
 				</div>
 			</div>

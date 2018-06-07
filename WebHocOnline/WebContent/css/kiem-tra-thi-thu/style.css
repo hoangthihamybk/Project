@@ -1,0 +1,208 @@
+/*------search form------*/
+#ktth-content .select_class , #ktth-content .select_subject {
+    display: none;
+}
+
+#ktth-content .search_content {
+    margin: 25px 0;
+}
+
+#ktth-content .search_content .dropdown {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#ktth-content .search_content .dropdown button {
+    width: 140px;
+    height: 42px;
+    font-size: 14px;
+}
+
+#ktth-content .search_content .dropdown button:hover,
+#ktth-content .search_content .dropdown button:focus,
+#ktth-content .search_content .dropdown button:active,
+#ktth-content .search_content .dropdown button:focus:active {
+    color: white;
+    background-color: #0072bc;
+    border-color: #0072bc;
+}
+
+#ktth-content .search_content .dropdown button .text {
+    float: left;
+    text-transform: uppercase;
+}
+
+#ktth-content .search_content .dropdown button .caret {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    margin-top: -2px;
+    vertical-align: middle;
+}
+
+#ktth-content .dropdown-menu {
+    border-radius: 0;
+    margin-top: 0;
+    max-width: 140px;
+    text-align: center;
+    min-width: 140px;
+}
+
+#ktth-content .dropdown-menu>li>a {
+    padding: 6px 20px;
+    font-size: 14px;
+    color: #000000;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(0,0,0,.15);
+}
+
+#ktth-content .dropdown-menu>li:last-child > a {
+    border-bottom: none;
+}
+
+#ktth-content .dropdown-menu>li>a:focus, #ktth-content .dropdown-menu>li>a:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #0072bc;
+}
+
+#ktth-content .search_input {
+    display: inline-block;
+}
+
+#ktth-content .div_search {
+    display: inline-block;
+}
+
+#ktth-content .btn_search {
+    height: 42px;
+    background-color: #0072bc;
+    font-size: 14px;
+}
+
+#ktth-content .test-item {
+    width: 100%;
+    padding-top: 10px;
+}
+
+#ktth-content .test-item .test-item-list {
+    width: 50%;
+    float: left;
+    background-color: #F9F9F9;
+}
+
+#ktth-content .test-item div.test-item-list:nth-child(even) {
+    padding-right: 20px;
+}
+
+#ktth-content .order_result, #ktth-content .order_result1 {
+    height: 34px;
+    line-height: 34px;
+    background-color: #0072bc;
+    display: block;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+#ktth-content .labelcontest {
+    padding: 15px 10px;
+    color: #f58220;
+    font-weight: bold;
+}
+
+#ktth-content .labelcontest img, #ktth-content ul.quiz-list img {
+    margin-right: 10px;
+    vertical-align: bottom;
+}
+
+#ktth-content ul.quiz-list {
+    list-style: none;
+    margin: 0 0 5px;
+    border-bottom: 1px solid #a2a2a2;
+    padding: 0;
+}
+
+#ktth-content ul.quiz-list li {
+    padding: 5px 10px;
+}
+
+#ktth-content ul.quiz-list li:nth-child(2n+1) {
+    background-color: #ededed;
+}
+
+#ktth-content ul.quiz-list li a {
+    color: #000000;
+}
+
+#ktth-content ul.quiz-list li a:hover {
+    text-decoration: underline;
+}
+
+#ktth-content ul.quiz-list li a.view-more {
+    text-align: right;
+    display: block;
+    color: #0072bc;
+    margin: 5px 0;
+}
+
+#ktth-content .classquiz {
+    float: left;
+    margin: 5px 0;
+    height: 25px;
+    line-height: 20px;
+    overflow-y: hidden;
+}
+
+#ktth-content .detail-right {
+    float: right;
+    padding-left: 30px;
+    margin: 5px 0;
+}
+
+#ktth-content .detail-right .summary_quiz {
+    float: left;
+}
+
+#ktth-content .detail-right .rate {
+    float: left;
+    color: #ffc000;
+}
+
+@media only screen and  (max-width: 768px) {
+    #ktth-content .test-item .test-item-list {
+        width: 100%;
+        float: none;
+    }
+
+    #ktth-content .test-item div.test-item-list:nth-child(even) {
+        padding-right: 0;
+    }
+}
+
+@media only screen and  (max-width: 480px) {
+    #ktth-content .search_input {
+        display: block;
+        text-align: center;
+    }
+
+    #ktth-content .search_content .dropdown {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    #ktth-content .search_content .dropdown button {
+        width: 240px;
+    }
+
+    #ktth-content .dropdown-menu {
+        min-width: 240px;
+        max-width: 240px;
+    }
+
+    #ktth-content .div_search {
+        display: block;
+        text-align: center;
+    }
+}

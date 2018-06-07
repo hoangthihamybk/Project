@@ -117,7 +117,7 @@
 		<div class="noidung">
 			<!-- <div class="tieude">
 				<h3> <i class="fa fa-edit fa-1x"></i>Danh sách học sinh </h3>
-			</div> -->
+			 -->
 			<div class="row" style="margin-left:30px; margin-right:30px">
 				<h2><strong>Thêm Evaluation mới</strong>
 				<a href="evaluation.jsp" style="float: right"><button class="btn btn-info"><i class="fa fa-undo" aria-hidden="true"></i>  Trở về</button></a>
@@ -229,6 +229,7 @@
 				
 				
 			</div>
+		</div>
 		</div>
 		<!-- datatable bootstrap -->
 	    <!-- FastClick -->

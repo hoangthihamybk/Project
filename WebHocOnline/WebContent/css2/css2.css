@@ -1,0 +1,24 @@
+.answer span.wrong-answer {
+       color: #d54e21;
+       position: relative;
+    }
+
+    .answer span.wrong-answer:before {
+        content: "\f00d";
+        font: normal normal normal 16px/1 FontAwesome;
+        display: block;
+        position: absolute;
+        left: -25px;
+        width: 16px;
+        height: 16px;
+        top: 50%;
+        margin-top: 0px;
+    }
+
+    .answer .iradio_square-blue.iradio_square-red {
+        background: url(/plugins/icheck/skins/square/red.png) no-repeat;
+    }
+
+    .answer .iradio_square-blue.iradio_square-red.checked.disabled {
+        background-position: -168px 0;
+    }

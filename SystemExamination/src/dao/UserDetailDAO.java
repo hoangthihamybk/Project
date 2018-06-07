@@ -46,7 +46,7 @@ public class UserDetailDAO implements ObjectDAO {
 		try {
 			Connection con = ConnectDB.getConnect();
 			PreparedStatement statement = con.prepareStatement(
-					"insert into UserDetail (ID,FullName,Gender,Birthday,PhoneNumber,Address,Avatar) values(?,?,?,?,?,?,?)");
+					"insert into UserDetail (UserID,FullName,Gender,Birthday,PhoneNumber,Address,Avatar) values(?,?,?,?,?,?,?)");
 			statement.setString(1, ud.getUserID());
 			statement.setString(2, ud.getFullName());
 			statement.setString(3, ud.getGender());
@@ -72,11 +72,11 @@ public class UserDetailDAO implements ObjectDAO {
 		mapUserDetail.replace(userID, ua);
 		try {
 			Connection connection = ConnectDB.getConnect();
-			String sqla = "update UserAccount set ID='" + ua.getUserID() + "'where ID='" + userID + "'";
+			String sqla = "update UserAccount set UserID='" + ua.getUserID() + "'where UserID='" + userID + "'";
 			
-			String sqlb = "update UserDetail set ID='" + ua.getUserID() + "',FullName=N'" + ua.getFullName() + "',Gender='"
+			String sqlb = "update UserDetail set UserID='" + ua.getUserID() + "',FullName=N'" + ua.getFullName() + "',Gender='"
 					+ ua.getGender() + "',Birthday='" + ua.getBirthDay() + "',PhoneNumber='" + ua.getPhoneNumber()
-					+ "',Address=N'" + ua.getAddress() + "',Avatar='" + ua.getLinkImage() + "' where ID='" + userID + "'";
+					+ "',Address=N'" + ua.getAddress() + "',Avatar='" + ua.getLinkImage() + "' where UserID='" + userID + "'";
 			PreparedStatement preparedStatementa = connection.prepareStatement(sqla);
 			PreparedStatement preparedStatementb = connection.prepareStatement(sqlb);
 			preparedStatementa.executeUpdate();
@@ -93,16 +93,16 @@ public class UserDetailDAO implements ObjectDAO {
 		if (!mapUserDetail.containsKey(userID))
 			return false;
 		mapUserDetail.remove(userID);
-		UserDAO.mapUser.remove(userID);
+		UserDAO.mapUser.remove(userID);////////////////
 		try {
 			
 			Connection con = ConnectDB.getConnect();
-			String sql = "delete from UserAccount where ID=?";
+			String sql = "delete from UserAccount where UserID=?";
 			PreparedStatement st = con.prepareStatement(sql);
 			st.setString(1, userID);
 			st.executeUpdate();
 			
-			String sql2 = "delete from UserDetail where ID=?";
+			String sql2 = "delete from UserDetail where UserID=?";
 			PreparedStatement st2 = con.prepareStatement(sql2);
 			st2.setString(1, userID);
 			st2.executeUpdate();

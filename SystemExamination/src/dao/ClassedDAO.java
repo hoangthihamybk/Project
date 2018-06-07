@@ -25,7 +25,7 @@ public class ClassedDAO implements ObjectDAO{
 				String listOfExaminationID = rs.getString(4);
 				String enable = rs.getString(5);
 				Classed ua = new Classed(classID, className, describe, listOfExaminationID, enable);
-				mapTemp.put(classID, ua);
+				mapTemp.put(classID, ua);   /////////////////////
 			}
 		} catch (Exception e) {
 			System.out.println(e.getMessage());

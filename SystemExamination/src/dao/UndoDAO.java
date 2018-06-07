@@ -21,7 +21,7 @@ public class UndoDAO {
 	public static Stack<Exam> undoExamination = new Stack<>();
 	public static Stack<ScoreBoard> undoScoreBoard = new Stack<>();
 
-	public boolean restoreDeletedAccount() {
+	public boolean restoreDeletedAccount() {/////////////////////////////
 		UserAccount us = new UserAccount();
 		if (!undoUserAccount.isEmpty()) {
 			us = undoUserAccount.pop();
